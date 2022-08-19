@@ -10,7 +10,7 @@ pipeline {
       stages {
         stage('git clone') {
 	  steps {
-	    git credentialId:'', url:'https://github.com/Arun02136/generate-pass.git'
+	   git credentialsId: 'git-arun', url: 'https://github.com/Arun02136/generate-pass.git'
 	  }
         }
         stage('docker build image') {
