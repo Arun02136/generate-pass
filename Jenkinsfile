@@ -5,7 +5,7 @@ pipeline {
     password(name:'PWD',defaultValue:'',description:'enter your dockerhub password')
     }
     environment {
-      DOCKER_IMAGE = "santhoshsp/html3:${BUILD_NUMBER}" 
+      DOCKER_IMAGE = "arunakilan/html3:${BUILD_NUMBER}" 
     }
       stages {
         stage('git clone') {
